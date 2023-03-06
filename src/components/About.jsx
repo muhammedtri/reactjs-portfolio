@@ -2,8 +2,8 @@ import React from "react"
 
 const About = () => {
   return (
-    <div
-      name="about"
+    <section
+      id="about"
       className="min-h-screen bg-[#0a192f] text-gray-300 flex justify-center items-center"
     >
       <div className="max-w-[1000px] h-full w-full px-4 mx-auto">
@@ -32,7 +32,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

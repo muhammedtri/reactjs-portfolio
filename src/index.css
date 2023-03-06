@@ -11,3 +11,6 @@
     background-color: #0a192f;
   }
 }
+.active{
+  color: rgb(219 39 119) !important;
+}
