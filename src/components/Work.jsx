@@ -1,6 +1,6 @@
 import React from "react"
-import work1 from "../assets/projects/work1.png"
-
+import { dataWorks } from "../DataWorks"
+import WorkCard from "./WorkCard"
 const Work = () => {
   return (
     <div
@@ -17,73 +17,10 @@ const Work = () => {
             <p className="py-4">Check out some of my recent work :</p>
           </div>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <div className="relative overflow-hidden group shadow-lg rounded-md">
-            <img src={work1} alt="" className="max-w-full" />
-            <div className="absolute w-full left-1/2 -translate-x-1/2 -bottom-[100%] group-hover:bottom-2 duration-300 p-2 bg-pink-100">
-              <p className="text-center font-bold text-black">
-                Crypto Tracker with ReactJS
-              </p>
-              <div className="flex justify-between">
-                <a
-                  href="/"
-                  className="flex-1 bg-pink-600 hover:bg-pink-700 text-gray-200 mx-2 block p-2 rounded-md text-center"
-                >
-                  <button>View Code</button>
-                </a>
-                <a
-                  href="/"
-                  className="flex-1 bg-pink-600 hover:bg-pink-700 text-gray-200 mx-2 block p-2 rounded-md text-center"
-                >
-                  <button>Live Preview</button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="relative overflow-hidden group shadow-lg rounded-md">
-            <img src={work1} alt="" />
-            <div className="absolute w-full left-1/2 -translate-x-1/2 -bottom-[100%] group-hover:bottom-2 duration-300 p-2 bg-pink-100">
-              <p className="text-center font-bold text-black">
-                Crypto Tracker with ReactJS
-              </p>
-              <div className="flex justify-between">
-                <a
-                  href="/"
-                  className="flex-1 bg-pink-600 hover:bg-pink-700 text-gray-200 mx-2 block p-2 rounded-md text-center"
-                >
-                  <button>View Code</button>
-                </a>
-                <a
-                  href="/"
-                  className="flex-1 bg-pink-600 hover:bg-pink-700 text-gray-200 mx-2 block p-2 rounded-md text-center"
-                >
-                  <button>Live Preview</button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="relative overflow-hidden group shadow-lg rounded-md">
-            <img src={work1} alt="" />
-            <div className="absolute w-full left-1/2 -translate-x-1/2 -bottom-[100%] group-hover:bottom-2 duration-300 p-2 bg-pink-100">
-              <p className="text-center font-bold text-black">
-                Crypto Tracker with ReactJS
-              </p>
-              <div className="flex justify-between">
-                <a
-                  href="/"
-                  className="flex-1 bg-pink-600 hover:bg-pink-700 text-gray-200 mx-2 block p-2 rounded-md text-center"
-                >
-                  <button>View Code</button>
-                </a>
-                <a
-                  href="/"
-                  className="flex-1 bg-pink-600 hover:bg-pink-700 text-gray-200 mx-2 block p-2 rounded-md text-center"
-                >
-                  <button>Live Preview</button>
-                </a>
-              </div>
-            </div>
-          </div>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {dataWorks.map((work) => (
+            <WorkCard key={work.id} work={work} />
+          ))}
         </div>
       </div>
     </div>

@@ -106,6 +106,8 @@ const Navbar = () => {
         <ul>
           <li className="w-[160px] h-[60px] flex justify-center items-center bg-green-700 ml-[-100px] hover:ml-0 duration-300">
             <a
+              rel="noreferrer"
+              target="_blank"
               href="https://github.com/muhammedtri"
               className="flex w-full justify-between items-center"
             >
@@ -114,6 +116,8 @@ const Navbar = () => {
           </li>
           <li className="w-[160px] h-[60px] flex justify-center items-center bg-blue-700 ml-[-100px] hover:ml-0 duration-300">
             <a
+              rel="noreferrer"
+              target="_blank"
               href="https://www.linkedin.com/in/mohammed-mellala-43984452/"
               className="flex w-full justify-between items-center"
             >
