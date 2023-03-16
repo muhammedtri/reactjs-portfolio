@@ -1,6 +1,7 @@
 import work1 from "./assets/projects/work1.png"
 import work2 from "./assets/projects/work2.png"
 import work3 from "./assets/projects/work3.png"
+import work4 from "./assets/projects/work4.png"
 export const dataWorks = [
   {
     id: 1,
@@ -26,9 +27,8 @@ export const dataWorks = [
   {
     id: 4,
     name: "Landing Page Tailwind CSS",
-    image: work3,
-    liveCode:
-      "https://github.com/muhammedtri/tailwind-template/blob/master/readme.md",
+    image: work4,
+    liveCode: "https://github.com/muhammedtri/tailwind-template",
     livePreview: "https://med-landing-tailwindcss.netlify.app/",
   },
 ]
